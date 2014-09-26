@@ -209,7 +209,7 @@ public class MainActivity extends Activity
 		// i.putExtra(Intent.EXTRA_EMAIL , new
 		// String[]{"recipient@example.com"});
 		i.putExtra(Intent.EXTRA_SUBJECT, "Todolist");
-		i.putExtra(Intent.EXTRA_TEXT, item12);
+		i.putExtra(Intent.EXTRA_TEXT, TODOlist1.getStudents());
 		try
 		{
 			startActivity(Intent.createChooser(i, "Send mail..."));
