@@ -17,7 +17,7 @@
         android:layout_alignBottom="@+id/add"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="65dp"
-        android:text="delet" />
+        android:text="mail" />
 
     <Button
         android:id="@+id/add"
@@ -40,6 +40,7 @@
 
     <ListView
         android:id="@+id/listView1"
+        android:descendantFocusability="blocksDescendants"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/delet"

@@ -15,6 +15,7 @@ import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Toast;
 
 
@@ -27,6 +28,7 @@ public class SecondActivity extends Activity
 	private TodoController tc;
 	private ArrayList<Individulitem> test;
 	private ArrayAdapter<Individulitem> adapter;
+	private ListView listview;
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
@@ -42,59 +44,28 @@ public class SecondActivity extends Activity
 		}
 	
 	
-	class getItemName implements android.view.View.OnClickListener{
+	public class getItemName implements android.view.View.OnClickListener{
 		
 		@Override
 		public void onClick(View v)
 		{
-			
-			//try
+
+			// try
 			text = itemname.getText().toString();
-			if (text.equals("")){
-				Toast.makeText(getApplicationContext(),"Please Enter some word.",Toast.LENGTH_SHORT).show();
+			if (text.equals(""))
+			{
+				Toast.makeText(getApplicationContext(),
+						"Please Enter some word.", Toast.LENGTH_SHORT).show();
 			}
-			
-			Individulitem s = new Individulitem (text);
-			test.add(s);
-			
-		    adapter = new ArrayTypeAdapter<?>(this,
-			        android.R.layout.main, test);
-			    listview.setAdapter(adapter);
-
-			    listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-		
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			//tc = new TodoController();
-			//tc.addStudent(s);
-			//Toast.makeText(getApplicationContext(),"Please Enter some 123.",Toast.LENGTH_SHORT).show();
-
-			//TODOlist.addTodo(text);
-			 //setViewValue(android.view.View, Object, String)
-			//ArrayAdapter<TodolistArray>adapter = new ArrayAdapter<TodolistArray>(this ,R.layout.item,TODOlist); 
-			//Intent getItemename = new Intent(SecondActivity.this , TodolistArray.class);
-			// TODO Auto-generated method stub
+			Individulitem s = new Individulitem(text);
+			Intent resultIntent = new Intent();
+			//item12.add(text);
+			resultIntent.putExtra("data", text);
+			setResult(Activity.RESULT_OK, resultIntent);
 			finish();
+
 		}
-
-	
-	
-	
-
+		
 
 		public boolean onCreateOptionsMenu(Menu menu)
 		{

@@ -22,6 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.todolist.SecondActivity" ></activity>
+	    <activity android:name="com.example.todolist.ThirdActivity" ></activity>
     </application>
 
 </manifest>

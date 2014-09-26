@@ -32,7 +32,7 @@ public class TodolistArray
 		return listeners;
 	}
 
-	public Collection<Individulitem> getStudents()
+	public ArrayList<Individulitem> getStudents()
 	{
 
 		return TodoList;
@@ -54,10 +54,10 @@ public class TodolistArray
 		}
 	}
 
-	public void removeStudent(Individulitem testStudent)
+	public void removeStudent(String i)
 	{
 
-		TodoList.remove(testStudent);
+		TodoList.remove(i);
 		notifyListeners();
 	}
 

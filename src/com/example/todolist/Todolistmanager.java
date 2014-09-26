@@ -23,12 +23,9 @@ public class Todolistmanager
 	static final String prefFile = "TodoList";
 	static final String slKey = "todoList";
 	Context context;
-
 	static private Todolistmanager todolistmanager = null;
-
 	public static void initManager(Context context)
 	{
-
 		if (todolistmanager == null)
 		{
 			if (context == null)
@@ -108,24 +105,6 @@ public class Todolistmanager
 		editor.putString(slKey, todoListToString(sl));
 		editor.commit();
 	}
-	/*private void saveInFile(){//String text, Date date) {
-		try {
-			FileOutputStream fos = openFileOutput(FILENAME,0);
-			Gson son = new Gson();
-			OutputStreamWriter osw = new OutputStreamWriter(fos);
-			son .toJson(tweet,osw);
-			osw.flush();
-					//Context.MODE_APPEND);
-			//fos.write(new String(date.toString() + " | " + text)
-				//	.getBytes());
-			//fos.close();
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}*/
+
 
 }

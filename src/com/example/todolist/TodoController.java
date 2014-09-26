@@ -10,11 +10,9 @@ public class TodoController
 
 	// Lazy Singleton
 	private static TodolistArray todoList = null;
-
 	// Warning: throws a runTimeException
 	static public TodolistArray getStudentList()
 	{
-
 		if (todoList == null)
 		{
 			try
@@ -61,11 +59,8 @@ public class TodoController
 		}
 	}
 
-
-
 	public void addStudent(Individulitem student)
 	{
-
 		getStudentList().addtodo(student);
 		//Toast.makeText(getApplicationContext(),"Please Enter some word.",Toast.LENGTH_SHORT).show();
 	}
