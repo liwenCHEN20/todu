@@ -9,6 +9,7 @@ import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 import android.util.SparseBooleanArray;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -180,6 +181,16 @@ public class MainActivity extends Activity
 		return true;
 	}
 
+	public void Summary(MenuItem menu)
+	{
+
+		String summary = new String("Todolist has"
+				+TODOlist1.size()+"item");
+		String summary2 = new String("Archive has"
+				+TODOlist2.size()+"item");
+		Toast.makeText(this, summary2, Toast.LENGTH_SHORT).show();
+		Toast.makeText(this, summary, Toast.LENGTH_SHORT).show();
+	}
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data)
 	{
@@ -282,6 +293,9 @@ public class MainActivity extends Activity
 		// TODO Auto-generated method stub
 		super.onStart();
 		TODOlist1 = loadFromFile(FILENAME);
+		TODOlist2 = loadFromFile(FILENAME2);
+		if (TODOlist2.getStudents() == null)
+			TODOlist2 = new TodolistArray();
 		if (TODOlist1.getStudents() == null)
 			TODOlist1 = new TodolistArray();
 		// adapter = new ArrayAdapter<LonelyTweetModel>(this,
@@ -341,5 +355,10 @@ public class MainActivity extends Activity
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+
+	public static void main(String[] args)
+	{
+
 	}
 }

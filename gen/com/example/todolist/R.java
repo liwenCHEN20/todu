@@ -26,7 +26,6 @@ public final class R {
     public static final class id {
         public static final int C123=0x7f080000;
         public static final int OK=0x7f08000e;
-        public static final int action_settings=0x7f080010;
         public static final int add=0x7f080004;
         public static final int archive=0x7f080006;
         public static final int archiveview=0x7f080007;
@@ -35,6 +34,7 @@ public final class R {
         public static final int delet=0x7f080003;
         public static final int editText1=0x7f08000d;
         public static final int in1=0x7f08000c;
+        public static final int item1=0x7f080010;
         public static final int listView1=0x7f080002;
         public static final int textView1=0x7f080001;
         public static final int textView2=0x7f080009;

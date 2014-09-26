@@ -1,0 +1,24 @@
+name: liwen Chen
+ONE Card number: 1371762
+Unix id: liwen1
+lecture section: A1
+instructor's name: Abram Hindle
+lab section: D01
+=========================================================
+This Counter Application will start by click the icon labeled "TODOlist" in the Launcher.
+=========================================================
+After start the application, the main page will display 3 buttons: "mail", "Archive", "add".
+When click on add, there will lead you to a new activity, there will be a EditText that you can add Todoitem name 
+on there and ok to finish add. Then you will return back at the main page. Now, you can see a checkbox beside your 
+will do item. The checkbox can be click or unclick depend what you want. if your keep your finger on the item name, 
+there will be a delet window pop up, and you can click ok to delet and cencle to do nothing. There is a summary button
+in the MenuItem menu, that will pop two string said how mane item in todolist and archive. and if you just click the item
+name, there will pop out a window that ask you whether put this item in Archive, if you click Archive, this item will
+delet from the Todolist and Archive Activity will start and you can see the item in archive page. 
+========================================================
+Since you arrive at the Archive activity, there is a TextView that give you a list that have all item that you
+save in the archive list. The same as Todolist, you just long click that item, you can delet from that list
+but, unfortunately, it cannot add back to Todolist again. There is a button at bottom called "back", it can help
+you close this Activity and back to main page.
+========================================================
+when you exit the App, it will Store the Todolist you create and Archive list you use.
