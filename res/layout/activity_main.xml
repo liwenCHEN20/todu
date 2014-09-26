@@ -9,26 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <Button
-        android:id="@+id/delet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/add"
-        android:layout_alignBottom="@+id/add"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="65dp"
-        android:text="mail" />
-
-    <Button
-        android:id="@+id/add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="32dp"
-        android:layout_marginLeft="38dp"
-        android:layout_toRightOf="@+id/delet"
-        android:text="add" />
-
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
@@ -48,5 +28,31 @@
         android:layout_below="@+id/textView1" >
 
     </ListView>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="44dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="add" />
+
+    <Button
+        android:id="@+id/delet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/add"
+        android:layout_alignBottom="@+id/add"
+        android:layout_alignLeft="@+id/listView1"
+        android:text="mail" />
+
+    <Button
+        android:id="@+id/toArchive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listView1"
+        android:layout_centerHorizontal="true"
+        android:text="Archive" />
 
 </RelativeLayout>

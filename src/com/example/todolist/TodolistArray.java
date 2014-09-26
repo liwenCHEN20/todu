@@ -96,5 +96,12 @@ public class TodolistArray
 
 		getListeners().remove(l);
 	}
+
+	public void setStudents(ArrayList<Individulitem> arrayList)
+	{
+		TodoList = arrayList;
+		// TODO Auto-generated method stub
+		
+	}
 	
 }
